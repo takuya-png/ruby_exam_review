@@ -1,7 +1,6 @@
-age = 20
-puts age < 30
-puts age <= 15
-puts age > 10
-puts age > 30
-puts age == 20
-puts age != 20
+age = 18
+if age < 20
+  puts "あなたは未成年です"
+else
+  puts "あなたは成人です"
+end
