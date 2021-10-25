@@ -1,11 +1,35 @@
-# ageの設定
-age = -1
-if age >= 0 && age < 10 # ageが0以上 かつ 10未満
-  puts "あなたはまだまだ子供です"
-elsif age >= 10 && age < 20 # ageが10以上 かつ 20未満
-  puts "大分大きくなりましたね"
-elsif age == 20 || age > 20 # ageが20 または 20より大きい
-  puts "あなたは成人です"
-else # 上記のいずれにも当てはまらなかった場会
-  puts "エラー！"
+# age = 20
+# case age
+# when 10
+#   puts "私はまだまだ子供です"
+# when 20 #ここでcaseの値と一致する
+#   puts "成人になりました"
+# when 60
+#   puts "定年です"
+# else
+#   puts ""
+# end
+
+
+puts "以下より行う操作を選んでください"
+puts "1:ブログを作成する"
+puts "2:作成されたブログを見る"
+puts "3:ブログアプリを終了する"
+number = gets.to_i
+case number
+when 1
+  puts "1:ブログを作成する"
+  puts "ブログのタイトルを入力してください"
+  blog_title = gets
+  puts "ブログの本文を入力してください"
+  blog_content = gets
+  puts "入力されたタイトルと本文は以下です"
+  puts "タイトル：#{blog_title}"
+  puts "本文：#{blog_content}"
+when 2
+  puts "2:作成されたブログを見る"
+when 3
+  puts "3:ブログアプリを終了する"
+else
+  puts "1~3の数字を入力してください"
 end
