@@ -1,35 +1,9 @@
-# age = 20
-# case age
-# when 10
-#   puts "私はまだまだ子供です"
-# when 20 #ここでcaseの値と一致する
-#   puts "成人になりました"
-# when 60
-#   puts "定年です"
-# else
-#   puts ""
-# end
-
-
-puts "以下より行う操作を選んでください"
-puts "1:ブログを作成する"
-puts "2:作成されたブログを見る"
-puts "3:ブログアプリを終了する"
-number = gets.to_i
-case number
-when 1
-  puts "1:ブログを作成する"
-  puts "ブログのタイトルを入力してください"
-  blog_title = gets
-  puts "ブログの本文を入力してください"
-  blog_content = gets
-  puts "入力されたタイトルと本文は以下です"
-  puts "タイトル：#{blog_title}"
-  puts "本文：#{blog_content}"
-when 2
-  puts "2:作成されたブログを見る"
-when 3
-  puts "3:ブログアプリを終了する"
-else
-  puts "1~3の数字を入力してください"
+# はじめに変数diveに1を代入する。
+dive = 1
+#値が5になると条件式がfalseになり処理が終了する
+while dive < 5
+  #処理内容
+  puts "#{dive}回目"
+  #ループごとに変数diveに1を加算
+  dive += 1
 end
