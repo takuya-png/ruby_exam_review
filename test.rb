@@ -1,2 +1,3 @@
 names = ["noro", "nakao","matsumoto"]
-puts names
+names << "nagasawa"
+puts names[3]
