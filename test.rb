@@ -1,9 +1,3 @@
-# はじめに変数diveに1を代入する。
-dive = 1
-#値が5になると条件式がfalseになり処理が終了する
-while dive < 5
-  #処理内容
-  puts "#{dive}回目"
-  #ループごとに変数diveに1を加算
-  dive += 1
-end
+10.times do #10回表示することを指定
+  puts "Hello World" #表示させる値（処理）
+ end
