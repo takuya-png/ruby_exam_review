@@ -1,5 +1,5 @@
-house = [{price:"2000万",location: "東京都",size:"80坪"},{price:"1500万",location:"千葉県",size:"50坪"},{price:"800万",location:"埼玉県",size:"100坪"}]
-puts house[1][:location]
-puts house[0][:size]
-puts house[2][:price]
-puts house[2][:size]
+def doing(date, place, food)
+  puts "#{date}は#{place}で#{food}を食べる"
+end
+puts doing("今日","渋谷","カレー")
+puts doing("明日","池袋","オムライス")
