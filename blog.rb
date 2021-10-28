@@ -1,26 +1,28 @@
-blog_titles = [] # 追記(配列の定義)
-blog_contents = []
-while true # 追記する
-  puts "以下より行う操作を選んでください"
-  puts "1:ブログを作成する"
-  puts "2:作成されたブログを見る"
-  puts "3:ブログアプリを終了する"
+blogs = []
+while true
+  index = ["以下より行う操作を選んでください", "1:ブログを作成する", "2:作成されたブログを見る", "3:ブログアプリを終了する"] # 1
+  index.each do |content| # 2
+  puts content
+  end
   number = gets.to_i
   if number == 1
+    blog = {} 
     puts "1:ブログを作成する"
     puts "ブログのタイトルを入力してください"
-    blog_title = gets
-    blog_titles << blog_title
+    blog[:title] = gets 
     puts "ブログの本文を入力してください"
-    blog_content = gets
-    blog_contents << blog_content
-    puts "入力されたタイトルと本文は以下です"
-    puts "タイトル：#{blog_title}"
-    puts "本文：#{blog_content}"
+    blog[:content] = gets # ハッシュのキーに値を持たせる
+    blogs << blog
+    puts "------入力確認------"
+    puts "タイトル：#{blog[:title]}" 
+    puts "本文：#{blog[:content]}"
   elsif number == 2
     puts "2:作成されたブログを見る"
-    puts "タイトル：#{blog_titles}" # 配列の値を取得
-    puts "本文：#{blog_contents}"
+    blogs.each do |blog|  # 配列のブログ情報を変数blogに代入
+      puts "タイトル：#{blog[:title]}" 
+      puts "本文：#{blog[:content]}" 
+      puts "-----------"
+    end
   elsif number == 3
     puts "3:ブログアプリを終了する"
     break # 追記する
