@@ -1,6 +1,5 @@
-def play(sports)
-  puts "私は今日#{sports}をします。"
+class House
 end
-play("野球")
-play("サッカー")
-play("バスケット")
+5.times do
+  p House.new
+end
