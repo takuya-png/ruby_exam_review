@@ -1,7 +1,11 @@
 class School
+  def name
+    @greeting = "Hello!"
+  end
+  def name1
+    puts @greeting
+  end
 end
-# 変数に代入せず確認する
-puts School.new.class
-# 変数に代入して確認する
 school = School.new
-puts school.class
+school.name
+school.name1
